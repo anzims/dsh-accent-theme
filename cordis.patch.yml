@@ -1,0 +1,11 @@
+# dsh-accent-theme - custom accent colour for the DSH Web GUI.
+#
+# One dual-face package: this patch mounts the row; the module scanner picks up
+# the browser half (lib/client.js) from the same row, and the browser half
+# pushes an alias-token override through the official ctx.theme.overrideTokens
+# seam. No vendor files are patched.
+#
+# inject guarantees ui-theme (which provides "theme") loads first.
+- insert:
+    - id: accent-theme
+      name: dsh-accent-theme
