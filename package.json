@@ -1,8 +1,9 @@
 {
   "name": "dsh-accent-theme",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
-  "description": "Custom accent colour for the DeepSeek Harness Web GUI, via the official ctx.theme.overrideTokens seam.",
+  "description": "Window theme for the DeepSeek Harness Web GUI: background, input, buttons, text and accent colours, via the official ctx.theme.overrideTokens seam.",
+  "keywords": ["deepseek-harness", "dsh", "dsh-plugin", "theme", "colours"],
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -15,7 +16,10 @@
   "dsh": {
     "bundle": { "patch": "./cordis.patch.yml" },
     "client": {
-      "inject": ["@deepseek-ai/dsh-client-ui-theme"],
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-theme",
+        "@deepseek-ai/dsh-client-locale"
+      ],
       "platform": "web"
     }
   },
