@@ -1,6 +1,6 @@
 {
   "name": "dsh-accent-theme",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "private": true,
   "description": "Window theme for the DeepSeek Harness Web GUI: background, input, buttons, text and accent colours, via the official ctx.theme.overrideTokens seam.",
   "keywords": ["deepseek-harness", "dsh", "dsh-plugin", "theme", "colours"],
